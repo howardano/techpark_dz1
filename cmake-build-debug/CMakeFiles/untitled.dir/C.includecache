@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/user/Desktop/Lernung/untitled/main.c
+stdio.h
+-
+malloc.h
+-
+structures.h
+C:/Users/user/Desktop/Lernung/untitled/structures.h
+methods.h
+C:/Users/user/Desktop/Lernung/untitled/methods.h
+
+C:/Users/user/Desktop/Lernung/untitled/methods.h
+stdbool.h
+-
+structures.h
+C:/Users/user/Desktop/Lernung/untitled/structures.h
+
+C:/Users/user/Desktop/Lernung/untitled/structures.h
+
