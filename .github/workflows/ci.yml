@@ -5,10 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: |
-      make packages
-      make analysis
-
+      - run: make packages\tmake analysis
   build:
     runs-on: ubuntu-latest
     steps:
