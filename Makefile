@@ -13,7 +13,8 @@ packages:
 build:
 	mkdir build && \
 	cd build && \
-
+	cmake -D TESTS = ON ../project && \
+	make
 
 analysis: 
 	chmod +x linters/run.sh && \
