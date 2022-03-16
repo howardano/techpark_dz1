@@ -5,14 +5,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: analysis
       - run: apt install lcov
   build:
     runs-on: ubuntu-latest
     needs: [analysis]
     steps:
     - uses: actions/checkout@v2 
-    - name: build
      - run: apt install lcov
   test:
     runs-on: ubuntu-latest
