@@ -1,8 +1,6 @@
 cmake_minimum_required(VERSION 3.0.0)
 project(iz1)
 
-set(CMAKE_C_FLAGS ${CMAKE_C_FLAGS} "-Wall -Wpedantic -Wextra -Werror")
-
 add_subdirectory(calculate_side_length)
 
 message("CALCULATOR_LIB_INCLUDE_DIRS = ${CALCULATOR_LIB_INCLUDE_DIRS}")

@@ -12,6 +12,7 @@ TEST(Existance, fine_scenario) {
     tst_triangle->b = 1;
     tst_triangle->c = 1;
     EXPECT_TRUE(check_if_triangle_exists(*tst_triangle));
+    free(tst_triangle);
 }
 
 TEST(Existance, negative_length) {
@@ -20,6 +21,7 @@ TEST(Existance, negative_length) {
     tst_triangle->b = 1;
     tst_triangle->c = -100;
     EXPECT_FALSE(check_if_triangle_exists(*tst_triangle));
+    free(tst_triangle);
 }
 
 TEST(Existance, too_long_sides) {
@@ -28,6 +30,7 @@ TEST(Existance, too_long_sides) {
     tst_triangle->b = 1;
     tst_triangle->c = 1;
     EXPECT_FALSE(check_if_triangle_exists(*tst_triangle));
+    free(tst_triangle);
 }
 
 TEST(Calculation, semi_perimeter_bad_triangle){
@@ -36,6 +39,7 @@ TEST(Calculation, semi_perimeter_bad_triangle){
     tst_triangle->b = 1;
     tst_triangle->c = 1;
     EXPECT_EQ(-1, calc_semiperimeter(*tst_triangle));
+    free(tst_triangle);
 }
 
 TEST(Calculation, semi_perimeter_fine_scenario){
@@ -44,6 +48,7 @@ TEST(Calculation, semi_perimeter_fine_scenario){
     tst_triangle->b = 1;
     tst_triangle->c = 1;
     EXPECT_EQ(1.5, calc_semiperimeter(*tst_triangle));
+    free(tst_triangle);
 }
 
 TEST(Calculation, sq_bad_triangle){
@@ -52,6 +57,7 @@ TEST(Calculation, sq_bad_triangle){
     tst_triangle->b = 1;
     tst_triangle->c = 1;
     EXPECT_EQ(-1, calc_sq(*tst_triangle));
+    free(tst_triangle);
 }
 
 TEST(Calculation, sq_fine_scenario){
@@ -60,6 +66,7 @@ TEST(Calculation, sq_fine_scenario){
     tst_triangle->b = 4;
     tst_triangle->c = 5;
     EXPECT_EQ(6, calc_sq(*tst_triangle));
+    free(tst_triangle);
 }
 
 TEST(Calculation, radius_calc_bad_triangle) {
@@ -68,6 +75,7 @@ TEST(Calculation, radius_calc_bad_triangle) {
     tst_triangle->b = 1;
     tst_triangle->c = 1;
     EXPECT_EQ(-1, calc_radius(*tst_triangle));
+    free(tst_triangle);
 }
 
 TEST(Calculation, radius_calc_fine_scenario) {
@@ -76,6 +84,7 @@ TEST(Calculation, radius_calc_fine_scenario) {
     tst_triangle->b = 4;
     tst_triangle->c = 5;
     EXPECT_EQ(2.5, calc_radius(*tst_triangle));
+    free(tst_triangle);
 }
 
 TEST(Calculation, square_side_length_bad_triangle) {
@@ -84,6 +93,7 @@ TEST(Calculation, square_side_length_bad_triangle) {
     tst_triangle->b = 1;
     tst_triangle->c = 1;
     EXPECT_EQ(-1, calc_square_side_length(*tst_triangle));
+    free(tst_triangle);
 }
 
 TEST(Calculation, square_side_length_fine_scenario) {
@@ -92,4 +102,5 @@ TEST(Calculation, square_side_length_fine_scenario) {
     tst_triangle->b = 4;
     tst_triangle->c = 5;
     EXPECT_EQ(5, calc_square_side_length(*tst_triangle));
+    free(tst_triangle);
 }
