@@ -4,7 +4,7 @@
 #include <stdio.h>
 
 float calc_semiperimeter(triangle trngle) {
-    if(!check_if_triangle_exists(trngle)) {
+    if (!check_if_triangle_exists(trngle)) {
         printf("Triangle does not exist...\n");
         return -1;
     }
@@ -12,16 +12,20 @@ float calc_semiperimeter(triangle trngle) {
 }
 
 float calc_sq(triangle trngle) {
-    if(!check_if_triangle_exists(trngle)) {
+    if (!check_if_triangle_exists(trngle)) {
         printf("Triangle does not exist...\n");
         return -1;
     }
     float semi_perimeter = calc_semiperimeter(trngle);
-    return sqrtf((float) (semi_perimeter * (semi_perimeter - trngle.a) * (semi_perimeter - trngle.b) * (semi_perimeter - trngle.c)));
+    return sqrtf((float) (
+    semi_perimeter *
+    (semi_perimeter - trngle.a) *
+    (semi_perimeter - trngle.b) *
+    (semi_perimeter - trngle.c)));
 }
 
 float calc_radius(triangle trngle) {
-    if(!check_if_triangle_exists(trngle)) {
+    if (!check_if_triangle_exists(trngle)) {
         printf("Triangle does not exist...\n");
         return -1;
     }
@@ -29,7 +33,7 @@ float calc_radius(triangle trngle) {
 }
 
 float calc_square_side_length(triangle trngle) {
-    if(!check_if_triangle_exists(trngle)) {
+    if (!check_if_triangle_exists(trngle)) {
         printf("Triangle does not exist...\n");
         return -1;
     }
@@ -37,7 +41,9 @@ float calc_square_side_length(triangle trngle) {
 }
 
 bool check_if_triangle_exists(triangle trngle) {
-    if(trngle.a < 0 || trngle.b < 0 || trngle.c < 0)
+    if (trngle.a < 0 || trngle.b < 0 || trngle.c < 0)
         return false;
-    return ((trngle.a < trngle.b + trngle.c) && (trngle.b < trngle.a + trngle.c) && (trngle.c < trngle.a + trngle.b));
+    return ((trngle.a < trngle.b + trngle.c) &&
+    (trngle.b < trngle.a + trngle.c) &&
+    (trngle.c < trngle.a + trngle.b));
 }

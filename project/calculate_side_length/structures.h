@@ -1,5 +1,5 @@
-#ifndef UNTITLED_STRUCTURES_H
-#define UNTITLED_STRUCTURES_H
+#ifndef PROJECT_CALCULATE_SIDE_LENGTH_STRUCTURES_H_
+#define PROJECT_CALCULATE_SIDE_LENGTH_STRUCTURES_H_
 
 typedef struct triangle {
     float a;
@@ -15,4 +15,4 @@ typedef struct square {
     float side_length;
 } square;
 
-#endif //UNTITLED_STRUCTURES_H
+#endif  // PROJECT_CALCULATE_SIDE_LENGTH_STRUCTURES_H_

@@ -1,5 +1,5 @@
-#ifndef UNTITLED_METHODS_H
-#define UNTITLED_METHODS_H
+#ifndef PROJECT_CALCULATE_SIDE_LENGTH_METHODS_H_
+#define PROJECT_CALCULATE_SIDE_LENGTH_METHODS_H_
 
 #include <stdbool.h>
 #include "structures.h"
@@ -10,4 +10,4 @@ float calc_radius(triangle trngle);
 float calc_square_side_length(triangle trngle);
 bool check_if_triangle_exists(triangle trngle);
 
-#endif //UNTITLED_METHODS_H
+#endif   // PROJECT_CALCULATE_SIDE_LENGTH_METHODS_H_

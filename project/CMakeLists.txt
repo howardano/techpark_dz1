@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.0.0)
 project(iz1)
 
+option(TESTS "check if tests needed" OFF)
+
 add_subdirectory(calculate_side_length)
 
 message("CALCULATOR_LIB_INCLUDE_DIRS = ${CALCULATOR_LIB_INCLUDE_DIRS}")
@@ -14,4 +16,6 @@ target_include_directories(${PROJECT_NAME} PUBLIC ${CALCULATOR_LIB_INCLUDE_DIRS}
 target_link_libraries(${PROJECT_NAME} PRIVATE ${CALCULATOR_LIB_LIBRARIES})
 target_link_libraries(${PROJECT_NAME} PRIVATE m)
 
-add_subdirectory(tests)
+if(TESTS)  
+    add_subdirectory(tests)
+endif()

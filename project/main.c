@@ -12,12 +12,16 @@ int main() {
 
     scanf("%f%f%f", &users_triangle->a, &users_triangle->b, &users_triangle->c);
 
-    if(!check_if_triangle_exists(*users_triangle)) {
+    if (!check_if_triangle_exists(*users_triangle)) {
         printf("Triangle does not exist...\n");
-        return -1;
+        free(users_triangle);
+        free(users_circle);
+        free(users_square);
+        return 0;
     }
 
-    printf("Triangle inputted: a = %f, b = %f, c = %f\n\n", users_triangle->a, users_triangle->b, users_triangle->c);
+    printf("Triangle inputted: a = %f, b = %f, c = %f\n\n",
+    users_triangle->a, users_triangle->b, users_triangle->c);
 
     users_circle->radius = calc_radius(*users_triangle);
     printf("Radius of circle circumscribed about a triangle: r = %f\n\n", users_circle->radius);
