@@ -1,7 +1,7 @@
 packages:
 	sudo apt-get update -y && \
 	sudo apt-get install build-essential && \
-	sudo apt-get install -y cppcheck clang-tidy python3-pip libc6-dbg lcov libgtest-dev && \ 
+	sudo apt-get install -y cppcheck clang-tidy python3-pip libc6-dbg lcov libgtest-dev && \
 	pip3 install cpplint && \
 	wget https://sourceware.org/pub/valgrind/valgrind-3.18.1.tar.bz2 && \
 	tar xfv valgrind-3.18.1.tar.bz2 && \
