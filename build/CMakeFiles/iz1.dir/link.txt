@@ -1,0 +1,1 @@
+/usr/bin/cc  -coverage -lgcov -rdynamic CMakeFiles/iz1.dir/main.c.o -o iz1  calculate_side_length/libcalculator_lib.a -lm 
