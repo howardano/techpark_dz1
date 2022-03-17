@@ -41,7 +41,7 @@ float calc_square_side_length(triangle trngle) {
 }
 
 bool check_if_triangle_exists(triangle trngle) {
-    if(trngle == NULL)
+    if(&trngle == NULL)
         return false;
     if (trngle.a < 0 || trngle.b < 0 || trngle.c < 0)
         return false;
