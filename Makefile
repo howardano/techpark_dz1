@@ -12,8 +12,10 @@ build:
 	make
 
 analysis: 
-	chmod +x ./linters/run.sh
+	./linters/run.sh
 
 test:
-	./build/tests/test_calc
+	./build/tests/test_calc && \
+	valgrind --tool=memcheck --leak-check=yes ./build/iz1 && \
+
 
