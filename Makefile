@@ -16,6 +16,6 @@ analysis:
 
 test:
 	./build/tests/test_calc && \
-	valgrind --tool=memcheck --leak-check=yes ./build/iz1 && \
+	valgrind --tool=memcheck --leak-check=yes ./build/iz1
 
 
