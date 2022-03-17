@@ -3,8 +3,8 @@ packages:
 	sudo apt-get install build-essential && \
 	sudo apt-get install -y cppcheck clang-tidy python3-pip libc6-dbg lcov libgtest-dev && \
 	pip3 install cpplint && \
-	chmod +x wget https://sourceware.org/pub/valgrind/valgrind-3.18.1.tar.bz2 && \
-	chmod +x tar xfv valgrind-3.18.1.tar.bz2 && \
+	wget https://sourceware.org/pub/valgrind/valgrind-3.18.1.tar.bz2 && \
+	tar xfv valgrind-3.18.1.tar.bz2 && \
 	cd valgrind-3.18.1 && \
 	chmod +x ./autogen.sh && \
 	chmod +x ./configure && \
