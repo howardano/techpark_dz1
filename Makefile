@@ -12,7 +12,6 @@ build:
 	make
 
 analysis: 
-	linters/run.sh && \
 	./linters/run.sh
 
 test:
