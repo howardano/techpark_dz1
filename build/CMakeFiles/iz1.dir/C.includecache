@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/root/techpark_dz1/project/calculate_side_length/methods.h
+stdbool.h
+-
+structures.h
+/root/techpark_dz1/project/calculate_side_length/structures.h
+
+/root/techpark_dz1/project/calculate_side_length/structures.h
+
+/root/techpark_dz1/project/main.c
+stdio.h
+-
+malloc.h
+-
+structures.h
+/root/techpark_dz1/project/structures.h
+methods.h
+/root/techpark_dz1/project/methods.h
+
