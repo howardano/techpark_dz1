@@ -12,7 +12,7 @@ build:
 	make
 
 analysis: 
-	./linters/run.sh
+	chmod +x ./linters/run.sh
 
 test:
 	./build/tests/test_calc
