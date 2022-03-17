@@ -1,9 +1,0 @@
-/root/techpark_dz1/build/CMakeFiles/rebuild_cache.dir
-/root/techpark_dz1/build/CMakeFiles/edit_cache.dir
-/root/techpark_dz1/build/CMakeFiles/iz1.dir
-/root/techpark_dz1/build/calculate_side_length/CMakeFiles/rebuild_cache.dir
-/root/techpark_dz1/build/calculate_side_length/CMakeFiles/edit_cache.dir
-/root/techpark_dz1/build/calculate_side_length/CMakeFiles/calculator_lib.dir
-/root/techpark_dz1/build/tests/CMakeFiles/rebuild_cache.dir
-/root/techpark_dz1/build/tests/CMakeFiles/edit_cache.dir
-/root/techpark_dz1/build/tests/CMakeFiles/test_calc.dir

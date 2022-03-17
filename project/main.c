@@ -12,13 +12,13 @@ int main() {
 
     scanf("%f%f%f", &users_triangle->a, &users_triangle->b, &users_triangle->c);
 
-    if (!check_if_triangle_exists(*users_triangle)) {
+  /*  if (!check_if_triangle_exists(*users_triangle)) {
         printf("Triangle does not exist...\n");
         free(users_triangle);
         free(users_circle);
         free(users_square);
         return 0;
-    }
+    }*/
 
     printf("Triangle inputted: a = %f, b = %f, c = %f\n\n",
     users_triangle->a, users_triangle->b, users_triangle->c);
