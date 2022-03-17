@@ -12,7 +12,7 @@ build:
 	make
 
 analysis: 
-	chmod +x linters/run.sh && \
+	linters/run.sh && \
 	./linters/run.sh
 
 test:
