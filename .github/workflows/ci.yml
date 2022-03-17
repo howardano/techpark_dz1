@@ -1,4 +1,4 @@
-on: merge request
+on: pull request
 
 jobs:
   analysis:
