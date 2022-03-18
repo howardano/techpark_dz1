@@ -8,7 +8,7 @@ packages:
 build:
 	mkdir build && \
 	cd build && \
-	cmake -D TESTS=ON ../project && \
+	cmake -D TESTS=ON ../project  && \
 	make
 
 analysis: 
@@ -17,5 +17,8 @@ analysis:
 test:
 	./build/tests/test_calc && \
 	valgrind --tool=memcheck --leak-check=yes ./build/tests/test_calc
+
+report:	
+	lcov -t "build/tests/test_calc" -o coverage.info -c -d build/calculate_side_length
 
 

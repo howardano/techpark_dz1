@@ -1,4 +1,9 @@
-on: pull_request
+on: ["push", "pull_request"]
+
+push:
+  branches: [ iz1 ]
+pull_request:
+  branches: [ main ]
 
 jobs:
   analysis:
@@ -16,4 +21,9 @@ jobs:
     needs: [build]
     steps:
       - uses: actions/checkout@v2
-      - run: make packages && make build && make test
+      - run: make packages && make build && make test && make report
+      - name: coveralls
+        uses: coverallsapp/github-action@master
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path-to-lcov: coverage.info
