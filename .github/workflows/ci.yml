@@ -1,9 +1,8 @@
-on: ["push", "pull_request"]
-
-push:
-  branches: [ iz1 ]
-pull_request:
-  branches: [ main ]
+on:
+  push:
+    branches: [ iz1 ]
+  pull_request:
+    branches: [ main ]
 
 jobs:
   analysis:
