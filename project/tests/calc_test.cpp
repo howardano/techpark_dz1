@@ -154,10 +154,10 @@ TEST(Creation, create_square_fine_scenario) {
 }
 
 TEST(Creation, fscanf_failure) {
-    char input[256] = "3 4";
+    char input[] = "3 4";
     FILE * fp;
     fp = fmemopen(input, strlen(input), "r");
-    fprintf(fp, input);
+    //fprintf(fp, input);
     triangle * tst_triangle = (triangle*)malloc(1 * sizeof(triangle));
     tst_triangle->a = 3;
     tst_triangle->b = 4;

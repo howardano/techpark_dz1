@@ -71,7 +71,7 @@ int create_square(circle crcl, square **users_square) {
 }
 
 void *safe_malloc(size_t size) {
-    if(size == 0) {
+    if (size == 0) {
         return NULL;
     }
     void *ptr = malloc(size);
