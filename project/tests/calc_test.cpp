@@ -95,10 +95,10 @@ TEST(Calculation, square_side_length_fine_scenario) {
 }
 
 TEST(Creation, create_triangle_fine_scenario) {
-    char input[256] = "3 4 5";
+    char input[] = "3 4 5";
     FILE * fp;
     fp = fmemopen(input, strlen(input), "r");
-    fprintf(fp, input);
+    //fprintf(fp, input);
     triangle * tst_triangle = (triangle*)malloc(1 * sizeof(triangle));
     tst_triangle->a = 3;
     tst_triangle->b = 4;
@@ -127,10 +127,10 @@ TEST(Creation, create_circle_fine_scenario) {
 }
 
 TEST(Creation, create_triangle_bad_triangle) {
-   char input[256] = "-3 -4 -5";
+   char input[] = "-3 -4 -5";
     FILE * fp;
     fp = fmemopen(input, strlen(input), "r");
-    fprintf(fp, input);
+    //fprintf(fp, input);
     triangle * tst_triangle = (triangle*)malloc(1 * sizeof(triangle));
     tst_triangle->a = 3;
     tst_triangle->b = 4;
